@@ -2,37 +2,31 @@
 
 import { useState } from 'react'
 
-export default function Banner() {
-  const [bannerOpen, setBannerOpen] = useState<boolean>(true)
+export default function ChatWidget() {
+  const [chatOpen, setChatOpen] = useState<boolean>(false);
 
   return (
-    <>
-      {bannerOpen && (
-        <div className="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-50">
-          <div className="bg-slate-800 text-slate-50 text-sm p-3 md:rounded shadow-lg flex justify-between">
-            <div className="text-slate-500 inline-flex">
-              <a
-                className="font-medium hover:underline text-slate-50"
-                href="https://github.com/cruip/open-react-template"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Download<span className="hidden sm:inline"> on GitHub</span>
-              </a>{' '}
-              <span className="italic px-1.5">or</span>{' '}
-              <a className="font-medium hover:underline text-emerald-400" href="https://cruip.com/open-pro/" target="_blank" rel="noreferrer">
-                Check Premium Version
-              </a>
-            </div>
-            <button className="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-gray-700" onClick={() => setBannerOpen(false)}>
-              <span className="sr-only">Close</span>
-              <svg className="w-4 h-4 shrink-0 fill-current" viewBox="0 0 16 16">
-                <path d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z" />
-              </svg>
+    <div className="fixed bottom-0 right-0 m-4 z-50">
+      {!chatOpen && (
+        <button
+          className="bg-blue-500 text-white p-4 rounded-full shadow-lg transform transition-all duration-200 ease-in-out hover:scale-105"
+          onClick={() => alert('Demo button clicked')}
+        >
+          Try demo
+        </button>
+      )}
+      {chatOpen && (
+        <div className="bg-slate-800 text-slate-50 text-sm p-3 rounded shadow-lg w-72 flex flex-col items-center">
+          <div className="flex justify-between items-center w-full">
+            <button
+              className="text-slate-400 hover:text-slate-200"
+              onClick={() => setChatOpen(false)}
+            >
+              &times;
             </button>
           </div>
         </div>
       )}
-    </>
-  )
+    </div>
+  );
 }

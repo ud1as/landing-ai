@@ -9,7 +9,7 @@ export default function ChatWidget() {
     <div className="fixed bottom-0 right-0 m-4 z-50">
       {!chatOpen && (
        <button
-       className="bg-blue-500 text-white p-4 rounded-full shadow-lg transform transition-all duration-200 ease-in-out hover:scale-105"
+       className="bg-purple-600  text-white p-4 rounded-full shadow-lg transform transition-all duration-200 ease-in-out hover:scale-105"
        onClick={() => window.location.href = 'https://flow-ai-ui.vercel.app/chat'}
      >
        Try demo

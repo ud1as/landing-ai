@@ -32,7 +32,7 @@ export default function Features() {
                 <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
               </svg>
               <h4 className="h4 mb-2">Accurate Information</h4>
-              <p className="text-lg text-gray-400 text-center">By minimizing data entry errors, Flow AI  ensures that employees always have access to accurate and up-to-date information, leading to better decision-making and reduced operational risks.</p>
+              <p className="text-lg text-gray-400 text-center">By minimizing data entry errors, Flitchat ensures that employees always have access to accurate and up-to-date information, leading to better decision-making and reduced operational risks.</p>
             </div>
 
             {/* 3rd item */}
@@ -59,7 +59,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">Improved Communication</h4>
-              <p className="text-lg text-gray-400 text-center">Integrating seamlessly with existing communication channels, Flow AI  provides a centralized platform for information sharing and collaboration, enhancing overall productivity and alignment.</p>
+              <p className="text-lg text-gray-400 text-center">Integrating seamlessly with existing communication channels, Flitchat provides a centralized platform for information sharing and collaboration, enhancing overall productivity and alignment.</p>
             </div>
 
             {/* 5th item */}
@@ -72,7 +72,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">Real-Time Insights</h4>
-              <p className="text-lg text-gray-400 text-center">Leveraging real-time data analysis and predictive analytics, Flow AI  delivers actionable insights that help business make informed decisions, optimizing its performance.</p>
+              <p className="text-lg text-gray-400 text-center">Leveraging real-time data analysis and predictive analytics, Flitchat delivers actionable insights that help business make informed decisions, optimizing its performance.</p>
             </div>
 
             {/* 6th item */}

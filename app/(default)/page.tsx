@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Home - Flow AI',
+  title: 'Home - Flitchat',
   description: 'Page description',
 }
 
